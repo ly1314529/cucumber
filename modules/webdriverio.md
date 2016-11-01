@@ -77,7 +77,7 @@ describe('my app', function() {
 });
     
   ```
-  更多动作指南请查看[api]（http://webdriver.io/api.html）
+  更多动作指南请查看[api](http://webdriver.io/api.html)
  
  
  
