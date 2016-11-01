@@ -35,8 +35,49 @@ describe('my app', function() {
 
 ```
 
-    * 快速创建一个配置
- 
+    
+   * 快速创建一个配置
+  
+  ```
+  npm install -g wdio
+  cd node_modules/.bin 
+  wdio config
+  
+  ```
+  * support
+    * chai
+   
+   ```javascript
+   describe('my awesome website', function() {
+    it('should do some chai assertions', function() {
+        browser.url('http://webdriver.io');
+        browser.getTitle().should.be.equal('WebdriverIO');
+    });
+});
+```
+   
+    * cucumber
+    
+    ```
+    npm install -g cucumber
+    features
+    action.js
+    ```
+    
+   * 一个移动设备的命令
+   
+   ```javascript
+   var client = require('webdriverio').remote({
+    desiredCapabilities: {
+    	platformName: 'iOS',
+        app: 'net.company.SafariLauncher',
+        udid: '123123123123abc',
+		deviceName: 'iPhone',
+    }
+});
+    
+  ```
+  更多动作指南请查看[api]（http://webdriver.io/api.html）
  
  
  
