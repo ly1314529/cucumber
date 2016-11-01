@@ -3,12 +3,14 @@
 
 ------
 
+
 * [webdriverio](http://webdriver.io/)
    * 这是一款能够让你控制浏览器或者是依靠几句代码就能控制移动设备的
    * 运行一个app的方法
-   
-   ```javascript
-   var client = require('webdriverio').remote({
+  
+  ```javascript
+  
+  var client = require('webdriverio').remote({
     desiredCapabilities: {
         browserName: 'chrome'
     }
@@ -32,11 +34,11 @@ describe('my app', function() {
             .getText('#status_message').should.eventually.be.equal('Message sent!');
     });
 });
-
 ```
 
-    
-   * 快速创建一个配置
+
+  *  快速创建一个配置
+  
   
   ```
   npm install -g wdio
@@ -44,8 +46,11 @@ describe('my app', function() {
   wdio config
   
   ```
+  
+  
   * support
-    * chai
+    
+   * chai
    
    ```javascript
    describe('my awesome website', function() {
@@ -56,14 +61,17 @@ describe('my app', function() {
 });
 ```
    
-    * cucumber
     
-    ```
+   * cucumber
+    
+ 
+ ```
     npm install -g cucumber
     features
     action.js
-    ```
-    
+```
+   
+   
    * 一个移动设备的命令
    
    ```javascript
